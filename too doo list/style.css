@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #EAF4FF,
+        #DCEEFF,
+        #F5FAFF
+    );
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px 20px;
+    color: #40566F;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 38px;
+    background: rgba(255,255,255,0.88);
+    border: 1px solid #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(83,130,177,0.13);
+}
+
+h1 {
+    color: #456789;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+p {
+    color: #8CA7C2;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.input-area {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    background: #F4F9FF;
+    border: 1px solid #DCEBFA;
+    border-radius: 12px;
+    outline: none;
+    color: #40566F;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #91B9E1;
+    box-shadow: 0 0 0 3px #E6F2FF;
+}
+
+button {
+    background: #8FB6DD;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #709DCB;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #F5F9FF;
+    border: 1px solid #E4EFFA;
+    border-radius: 14px;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #EDF5FF;
+    transform: translateY(-2px);
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #AABBCD;
+}
+
+.edit-btn {
+    background: #DCEBFA;
+    color: #52799F;
+    padding: 9px 12px;
+}
+
+.edit-btn:hover {
+    background: #C6DDF4;
+}
+
+.delete-btn {
+    background: #F5E3E8;
+    color: #B77889;
+    padding: 9px 12px;
+}
+
+.delete-btn:hover {
+    background: #EFD1DA;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 12px;
+    }
+
+    .container {
+        padding: 23px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+}

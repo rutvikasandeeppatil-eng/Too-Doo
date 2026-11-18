@@ -1,0 +1,28 @@
+users = {
+    "person1": {
+        "username": "harshitha",
+        "password": "pass123",
+        "id": 1
+    },
+    "person2": {
+        "username": "alex",
+        "password": "pass456",
+        "id": 2
+    }
+}
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+matching_user = None
+for user in users.values():
+    if user["username"] == username:
+        matching_user = user
+        break
+
+if matching_user is None:
+    print("Invalid username")
+elif matching_user["password"] != password:
+    print("Wrong password")
+else:
+    print(f"Login successful. User ID: {matching_user['id']}")
